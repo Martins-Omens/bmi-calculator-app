@@ -1,0 +1,103 @@
+:root {
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-6: hsl(205, 89%, 70%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 560px;
+  padding: 20px;
+  background: #eee;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin-bottom: 30px;
+  color: var(--clr-primary-4);
+  text-align: center;
+}
+.client {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.client-details label{
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.client-details input{
+    width: 75%;
+    border: 1px solid black;
+    font-size: 17px;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+.age{
+    margin-left: 50px;
+}
+
+.gender{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.gender a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--clr-primary-5);
+    color: #222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.gender a:hover{
+    background: var(--clr-primary-6);
+    color: #fff;
+}
+.calculate{
+    margin: 30px 0;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--clr-primary-4);
+    padding: 10px;
+    transition: 0.5s;
+}
+#calculate-bmi{
+    text-decoration: none;
+    color: #eee;
+    font-size: 17px;
+    font-weight: 500;
+}
+.calculate:hover{
+    background-color: var(--clr-primary-6);
+}
+.output{
+    padding: 10px 0;
+}
